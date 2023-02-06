@@ -254,9 +254,13 @@ margin-left: auto;
 
 /* shero-section */
 .hero-section {
-  background-color: var(--accent-bg-cl);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/people-office.jpg);
   padding-top: 188px;
   padding-bottom: 188px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1440px;
+  background-repeat: no-repeat;
 }
 
 .main-hero-h {
@@ -330,6 +334,9 @@ margin-left: auto;
 /* Team */
 .team-section { 
   background-color: var(--secondary-bg-cl);
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1440px;
 }
 
 .teem-container {
@@ -362,6 +369,9 @@ margin-left: auto;
 
 /* Footer*/
 .footer {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
   padding-bottom: 100px ;
   padding-top: 138px;
   background-color: var(--accent-bg-cl);
