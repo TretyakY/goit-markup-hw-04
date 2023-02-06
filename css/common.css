@@ -366,6 +366,15 @@ margin-left: auto;
 .team-h {
   margin-bottom: 8px;
 }
+.team-text {
+  margin-bottom: 8px;
+}
+
+ .socials {
+   display: flex;
+   gap: 24px;
+   justify-content: center;
+ }
 
 /* Footer*/
 .footer {
@@ -447,3 +456,5 @@ margin-left: auto;
 .text-set {
   margin-top: 8px;
  }
+
+
