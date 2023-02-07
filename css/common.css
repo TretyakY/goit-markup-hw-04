@@ -295,6 +295,21 @@ margin-left: auto;
   width: 100%;
 }
 
+.about-li::before {
+ display: block;
+ content: '';
+ width: 264px;
+ height: 112px;
+ border-radius: 4px;
+ background-color: var(--light-wht-txt-cl);
+ margin-bottom: 8px;
+}
+
+/* .icon-antenna-1::before {background: url('../images/icon/icon-abn');}  */
+.icon-clock-1 
+.icon-diagram-1 
+.icon-astronaut-1
+
 .about-li {
   max-width: 264px;
 }
@@ -369,12 +384,32 @@ margin-left: auto;
 .team-text {
   margin-bottom: 8px;
 }
+.socials-icon {
+  fill: var(--wht-cl);
+}
 
  .socials {
    display: flex;
    gap: 24px;
+   align-content: center;
    justify-content: center;
  }
+ 
+ .socials-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px ;
+  height: 40px ;
+
+  background-color: var(--contrast-bg-cl);
+  border-radius: 50%;
+  }
+
+  .socials-link:hover   {
+  background-color: var(--deep-bg-cl);
+  }
 
 /* Footer*/
 .footer {
@@ -385,6 +420,10 @@ margin-left: auto;
   padding-top: 138px;
   background-color: var(--accent-bg-cl);
   }
+
+.general-footer {
+  display: flex;
+}
 
 .footer-logo {
     margin-bottom: 16px;
@@ -403,6 +442,15 @@ margin-left: auto;
   color:  var(--light-dark-tx);
   width: 264px;    
  }
+ .footer-right {
+ }
+
+ .footer-icons {
+  display: flex;
+ }
+
+
+
 
  /* Portfolio */
 
