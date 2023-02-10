@@ -75,6 +75,7 @@ body {
 
 .container {
   width: 1158px;
+  box-sizing: border-box;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -343,8 +344,7 @@ margin-left: auto;
 
 .we-list {
   display: flex;
-  gap: 24px;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 
@@ -409,7 +409,8 @@ margin-left: auto;
   border-radius: 50%;
   }
 
-  .socials-link:hover   {
+  .socials-link:hover,
+  .socials-link:focus{
   background-color: var(--deep-bg-cl);
   }
 /* customers section */
@@ -428,18 +429,23 @@ margin-left: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #8E8F99;
 }
 
-.logos-svg {
-  fill: #AFB1B8;
-}
-.logos-svg:hover
- {
-  fill: var(--deep-bg-cl);
-}
-.icon-logos-cl:hover {
+.icon-logos-cl:hover,
+.icon-logos-cl:focus {
   border: 1px solid var(--deep-bg-cl);
+  color: var(--deep-bg-cl);
 }
+.logos-svg {
+  fill: currentColor;
+}
+.logos-svg:hover,
+.logos-svg:focus
+ {
+  fill: currentColor;
+}
+
 
 /* Footer*/
 .footer-container {
@@ -479,7 +485,7 @@ margin-left: auto;
  }
  /* Footer right part*/
  .footer-right {
-  padding-left: 120px;
+  margin-left: 120px;
  }
 .footer-right-text {
   color: var(--wht-cl);
@@ -535,8 +541,8 @@ margin-left: auto;
 .portfolio-card {
   display: flex;
   flex-wrap: wrap;
-  gap: 48px 24px;
-  justify-content: center;
+  row-gap: 48px 24px;
+  justify-content: space-between;
 }
 
 .portfolio-li {
